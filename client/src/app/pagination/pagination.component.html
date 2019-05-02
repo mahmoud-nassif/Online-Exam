@@ -1,0 +1,36 @@
+<ul>
+    <!-- <li *ngIf="currentPage-range>1" (click)="selectPage(currentPage-1,$event)">
+      <a href="">&lsaquo;&lsaquo;</a>
+    </li> -->
+
+  <!-- <li *ngIf="currentPage-range>1" (click)="cancelEvent($event)">
+    <a href="">...</a>
+  </li> -->
+  <!-- <li *ngIf="currentPage>1" (click)="selectPage(currentPage-1,$event)">
+      <a href="">&lsaquo;&lsaquo;</a>
+    </li> -->
+
+    <li *ngFor="let page of pages | async" [class.active]="page == currentPage">
+      <a href="javascript:void(0)" (click)="selectPage(page,$event)">
+        {{page}}
+      </a>
+    </li>
+    <!-- to do
+    1-style pagiantion to fit the all page
+    2-adjust question display and its options
+    3-think in a way to collect answers and correct them
+    4-show the result to user
+    (next project is posts and comments) -->
+
+    <!-- <li *ngIf="currentPage<totalPages" (click)="selectPage(currentPage+1,$event)">
+        <a href="">&rsaquo;&rsaquo;</a>
+      </li> -->
+
+    <!-- <li *ngIf="currentPage+range<totalPages" (click)="cancelEvent($event)">
+      <a href="">...</a>
+    </li> -->
+
+    <!-- <li *ngIf="currentPage+range<totalPages" (click)="selectPage(currentPage+1,$event)">
+      <a href="">&rsaquo;&rsaquo;</a>
+    </li> -->
+</ul>

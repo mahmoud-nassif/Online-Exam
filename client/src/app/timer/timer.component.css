@@ -1,0 +1,16 @@
+
+.watch{
+border: 1px solid white;
+width: 100%;
+margin: auto;
+background-color:lightskyblue;
+}
+
+.timer{
+width: 75%;
+margin: auto;
+text-align: center;
+height: 100px;
+padding: 20px;
+color:rgb(6, 72, 158);
+}

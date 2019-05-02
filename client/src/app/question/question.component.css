@@ -1,0 +1,39 @@
+.question{
+    padding:20px 20px;
+    font: 50px bold tahoma;
+    background-color:white;
+    color:rgb(9, 9, 112);
+    text-align: center;
+    height: 400px;
+   
+}
+h1{
+    margin-bottom: 50px;
+    color: darkblue;
+    font: 4rem bold italic;
+}
+
+.message{
+    display: block;
+    padding: 100px 50px;
+    font: 50px bold arial;
+    background-color: chocolate;
+    color: gold;
+    text-align: center;
+}
+.xxx{
+    display: -webkit-box;
+}
+
+.option{
+    padding: 5px;
+    -webkit-box-flex: 1;
+}
+.control{
+    display: inline-block; 
+    margin-right: 5px;
+}
+span{
+    color: black;
+    font: 3rem bold tahoma;
+}

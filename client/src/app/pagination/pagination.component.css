@@ -1,0 +1,40 @@
+ul{
+  /* display: -webkit-box;
+  -webkit-box-flex: 1; */
+  display: block;
+  width: 65%;
+  list-style: none;
+  padding: 0;
+  margin: 1px auto;
+}
+
+li {
+  background-color:lightskyblue;
+    outline: none;
+    cursor: pointer;
+    float: left;
+    width: calc(100% / 8);
+    border-left: 1px solid black;
+  }
+
+  li:first-child{
+    border-left: none;
+  }
+
+li.active{
+   
+    background-color: gold;
+   
+}
+
+a{
+  display: inline-block;
+  width: 100%;
+  border: 1px solid lightskyblue;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+a:hover{
+  text-decoration: none;
+}

@@ -1,0 +1,32 @@
+
+<app-timer (timeUp)="onTimeUp($event)"></app-timer>
+
+<div class="question" *ngIf="!timeUp;else message">
+  <!-- <div class="container">
+    <h1>{{current.data[0].body}}</h1>
+    <p *ngFor="let option of current.data[0].options;let i=index">
+      <input class="" type="checkbox" name="option" value="{{i}}"><span class="text-dark">{{option}}</span>
+    </p>
+  </div> -->
+  <div *ngFor="let item of questionsArray">
+    <!-- {{item|json}} -->
+    <h1>{{item.body}}?</h1>
+    <div class="xxx">
+      <p *ngFor="let option of item.options;let i=index" class="option">
+        <input class="control" type="radio" name="option" value="{{i}}">
+        <span class="text-dark">{{option}}</span>
+      </p>
+    </div>
+  </div>
+</div>
+<ng-template #message>
+  <div class="message">
+      <h2> time is up,thanks click to show the result</h2>
+      <button class="btn btn-success">result</button>
+  </div>
+</ng-template>
+<!-- 
+<button (click)="next(current)" class="btn btn-primary">next</button>
+<button (click)="previous(current)" class="btn btn-primary">previous</button> -->
+
+<app-pagination *ngIf="!timeUp" [size]="size" [limit]="limit" [offset]="offset" (pageChange)="onPageChange($event)"></app-pagination>
